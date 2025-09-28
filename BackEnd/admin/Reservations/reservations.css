@@ -1,0 +1,108 @@
+body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* الشريط الجانبي */
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background: #2c3e50;
+            color: white;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+            border-bottom: 1px solid #34495e;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar ul li:hover {
+            background: #34495e;
+        }
+
+        .logout {
+            text-align: center;
+            padding: 15px;
+            background: red;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin: 0;
+        }
+
+        .logout:hover {
+            background: #c0392b;
+        }
+        .title h1{
+            text-align: center;
+            margin-left: 70px;
+            /* margin-top: 25px; */
+        }
+
+.reservations {
+            margin-left: 300px;
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            /* gap: 20px; */
+            justify-content: center;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .card p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+
+        
+        

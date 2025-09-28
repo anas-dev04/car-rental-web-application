@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <a href="C:\Users\ANAS\Desktop\PFF\PartiePratique\HomePage/home.php" class="logo"><img src="logo.webp" alt=""></a>
+        <ul>
+            <li><a href="http://localhost/PFF/PartiePratique/HomePage/home.html">Home</a></li>
+            <li><a href="http://localhost/PFF/PartiePratique/OurCars/OurCars.html">Our Cars</a></li>
+            <li><a href="http://localhost/PFF/PartiePratique/AboutUs/AboutUs.html">About Us</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <div class="profil">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="send">
+        <h1>Send us a message</h1>
+        <form id="contactForm" novalidate action="contact.php" method="post">
+            <label for="FullName">Full name*</label><br>
+            <input type="text" id="FullName" class="FullName" name="FullName" required>
+            <span class="feedback"></span>
+            <br><br>
+        
+            <label for="Email">Email*</label><br>
+            <input type="email" id="Email" class="Email" required name="Email">
+            <span class="feedback"></span>
+            <br><br>
+        
+            <label for="NumberPhone">Phone number*</label><br>
+            <input type="text" id="NumberPhone" class="NumberPhone" required placeholder="0606060606" name="NumberPhone">
+            <span class="feedback"></span>
+            <br><br>
+        
+            <label for="Subject">Subject*</label><br>
+            <input type="text" id="Subject" class="Subject" required name="Subject">
+            <span class="feedback"></span>
+            <br><br>
+        
+            <label for="Message">Message*</label><br>
+            <textarea id="Message" class="Message" required name="Message"></textarea>
+            <span class="feedback"></span>
+            <br><br>
+        
+            <button type="submit" class="btn">Send</button>
+            <p id="resultMessage"></p>
+        </form>
+    </div>
+    <footer>
+        <div class="informations">
+            <ul>
+                <li><i class="fa-solid fa-house"></i><h2>Our Locations</h2>
+                <div class="moreinformations">
+                <span>Agadir Agency</span><br>
+                <span>Casablanca Agency</span><br>
+                <span>Rabat Agency</span><br>
+                <span>Tangier Agency</span><br>
+                <span>Marackech Agency</span>
+                </div>
+                </li>
+                <div class="lines"></div>
+                <li><i class="fa-solid fa-phone"></i><h2>Contact Phone</h2>
+                <div class="moreinformations">
+                    <span>Info & Reservation:</span><br>
+                    <span><h4 style="display: inline-block;">+212 629988434</h4></span>
+                </div>
+                </li>
+                <div class="lines"></div>
+                <li><i class="fa-solid fa-envelope"></i><h2> Email Contact</h2>
+                <div class="moreinformations">
+                    <span>Booking: <h4 style="display: inline-block;">booking@AnasCars.ma</h4></span><br>
+                    <span>Contact: <h4 style="display: inline-block;">contact@carlaville.ma</h4></span>
+                </div>
+                </li>
+                <div class="lines"></div>
+                <li><i class="fa-solid fa-clock"></i><h2 style="display: inline-block;"> Working Hours</h2>
+                <div class="moreinformations">
+                    <span>Working Hours: <h4 style="display: inline-block;">24h/7j</h4></span><br>
+                    <span>Reservation: <h4 style="display: inline-block;">All Year</h4></span>
+                </div>
+                </li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <div class="infor2">
+            <div class="informations2">
+                <a href="home.html" class="logo"><img src="logo.webp" alt=""></a><br>
+                <p>Car La Ville offers premium car rental in Morocco with high-end vehicles for unforgettable trips.</p>
+            </div>
+            <div class="information3                                                         ">
+                <ul>
+                    <li><a href="C:\Users\ANAS\Desktop\PFF\PartiePratique\HomePage\home.html">Home</a></li>
+                    <li><a href="C:\Users\ANAS\Desktop\PFF\PartiePratique\OurCars\OurCars.html">Our Cars</a></li>
+                    <li><a href="C:\Users\ANAS\Desktop\PFF\PartiePratique\AboutUs\AboutUs.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="line"></div>
+        <div class="informations4">
+            <p>Follow us:</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            
+            <div class="debitcard">
+                <img src="visa.png" alt="">
+                <img src="card.png" alt="">
+                <img src="maestro.png" alt="">
+            </div>
+        </div>
+        <div class="informations5">
+            <p>© Copyright 2025 carlaville.ma</p>
+            <div class="seceruty">
+                <a href="">Privacy Policy</a>
+                <a href="">Terms and Conditions</a>
+            </div>
+        </div>
+</footer>
+
+
+
+<!-- <script src="Contact.js"></script> -->
+</body>
+</html>

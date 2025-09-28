@@ -1,0 +1,119 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color1: #fafaff;
+    --background-color2: #ffffff;
+    --background-color3: #ededed;
+    --background-color4: #cad7fda4;
+    --primary-color: #4b49ac;
+    --secondary-color: #0c007d;
+    --Border-color: #3f0097;
+    --one-use-color: #3f0097;
+    --two-use-color: #5500cb;
+}
+/* الشريط الجانبي */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #2c3e50;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #34495e;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li:hover {
+    background: #34495e;
+}
+
+.logout {
+    text-align: center;
+    padding: 15px;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+}
+
+.logout:hover {
+    background: #c0392b;
+}
+.main {
+    height: calc(100vh - 70px);
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 40px 30px 30px 30px;
+}
+
+.main::-webkit-scrollbar-thumb {
+    background-image: 
+        linear-gradient(to bottom, rgb(0, 0, 85), rgb(0, 0, 50));
+}
+.main::-webkit-scrollbar {
+    width: 5px;
+}
+.main::-webkit-scrollbar-track {
+    background-color: #9e9e9eb2;
+}
+h1,h4{
+    text-align: center;
+}
+.main-content{
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.main-content a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: var(--Border-color);
+}
+.main-content a:hover{
+    color: var(--secondary-color);
+}
+.main-content a .active{
+    text-decoration: solid;
+    color: var(--background-color4);
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo"><img src="logo.webp" alt=""></a>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="http://localhost/PFF/PartiePratique/OurCars/OurCars.html">Our Cars</a></li>
+            <li><a href="http://localhost/PFF/PartiePratique/AboutUs/AboutUs.html">About Us</a></li>
+            <li><a href="http://localhost/PFF/PartiePratique/ContactUs/Contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <div class="reserve">
+            <div class="titre">
+                <p>High-end car rental in Morocco for an unforgettable trip with Cars iRent Morocco</p>
+            </div>
+            <div class="form">
+                <form action="rent.php" method="post">
+                    <h2>Make a Reservation</h2>
+                    <label>Pick-up location</label>
+                    <select required name="pickup_location">
+                        <option value="" disabled selected hidden>Choose an option</option>
+                        <option value="Agadir Agency">Agadir Agency</option>
+                        <option value="Casablanca Agency">Casablanca Agency</option>
+                        <option value="Rabat Agency">Rabat Agency</option>
+                        <option value="Tangier Agency">Tangier Agency</option>
+                        <option value="Marackech Agency">Marackech Agency</option>
+                    </select>
+                    <label>Return location</label>
+                    <select required name="return_location">
+                        <option value="" disabled selected hidden>Choose an option</option>
+                        <option value="Agadir Agency">Agadir Agency</option>
+                        <option value="Casablanca Agency">Casablanca Agency</option>
+                        <option value="Rabat Agency">Rabat Agency</option>
+                        <option value="Tangier Agency">Tangier Agency</option>
+                        <option value="Marackech Agency">Marackech Agency</option>
+                    </select>
+                    <label>Pick-up date</label>
+                    <input type="date" required name="pickup_date">
+                    <label>Pick-up Hour</label>
+                    <select required name="pickup_time">
+                        <option value="00:00">00:00</option>
+                        <option value="00:30">00:30</option>
+                        <option value="01:00">01:00</option>
+                        <option value="01:30">01:30</option>
+                        <option value="02:00">02:00</option>
+                        <option value="02:30">02:30</option>
+                        <option value="03:00">03:00</option>
+                        <option value="03:30">03:30</option>
+                        <option value="04:00">04:00</option>
+                        <option value="04:30">04:30</option>
+                        <option value="05:00">05:00</option>
+                        <option value="05:30">05:30</option>
+                        <option value="06:00">06:00</option>
+                        <option value="06:30">06:30</option>
+                        <option value="07:00">07:00</option>
+                        <option value="07:30">07:30</option>
+                        <option value="08:00">08:00</option>
+                        <option value="08:30">08:30</option>
+                        <option value="09:00" selected="selected">09:00</option>
+                        <option value="09:30">09:30</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                        <option value="21:30">21:30</option>
+                        <option value="22:00">22:00</option>
+                        <option value="22:30">22:30</option>
+                        <option value="23:00">23:00</option>
+                        <option value="23:30">23:30</option>
+                    </select>
+                    <label>Return date</label>
+                    <input type="date" name="return_date">
+                    <label>Return Hour</label>
+                    <select required name="return_time">
+                        <option value="00:00">00:00</option>
+                        <option value="00:30">00:30</option>
+                        <option value="01:00">01:00</option>
+                        <option value="01:30">01:30</option>
+                        <option value="02:00">02:00</option>
+                        <option value="02:30">02:30</option>
+                        <option value="03:00">03:00</option>
+                        <option value="03:30">03:30</option>
+                        <option value="04:00">04:00</option>
+                        <option value="04:30">04:30</option>
+                        <option value="05:00">05:00</option>
+                        <option value="05:30">05:30</option>
+                        <option value="06:00">06:00</option>
+                        <option value="06:30">06:30</option>
+                        <option value="07:00">07:00</option>
+                        <option value="07:30">07:30</option>
+                        <option value="08:00">08:00</option>
+                        <option value="08:30">08:30</option>
+                        <option value="09:00" selected="selected">09:00</option>
+                        <option value="09:30">09:30</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                        <option value="21:30">21:30</option>
+                        <option value="22:00">22:00</option>
+                        <option value="22:30">22:30</option>
+                        <option value="23:00">23:00</option>
+                        <option value="23:30">23:30</option>
+                    </select>
+                    <button type="submit" class="submit" name="Rent">Rent  Now</button>                                    
+                </form>
+            </div>
+    </div>
+    <!-- <div class="OurCartypes">
+        <h1>Find the perfect car for you</h1> 
+    </div> -->
+
+    <div class="content">
+        <h1>Why rent a car with <span style="color: blue;font-size:40px;text-decoration: underline blue solid;">AnasCars ?</span></h1>
+            <div class="whyUs">
+                <div class="ostol">
+                    <h3><i class="fa-solid fa-car" style="color: blue;font-size: 30px;"></i> Diverse fleet of cars</h3>
+                    <hr>
+                    <p>Our fleet offers a wide range of vehicles to suit all your needs, from compact cars for city driving to luxury and sports cars for every occasion. Enjoy comfort, reliability, and performance on every journey.</p>               
+                </div>
+                <div class="prix">
+                    <h3><i class="fa-solid fa-hand-holding-dollar" style="color: blue;font-size: 30px;"></i> Reasonable prices</h3>
+                    <hr>
+                    <p>We offer competitive and reasonable prices on all our vehicles, ensuring that you get great value for your money without compromising on quality or service.</p>
+                </div>
+                <div class="reserveeee">
+                    <h3><i class="fa-solid fa-shield" style="color: blue;font-size: 30px;"></i> Easy and safe booking</h3>
+                    <hr>
+                    <p>Booking with us is simple and secure. Our easy-to-use online system allows you to reserve your vehicle quickly, with complete peace of mind knowing your personal information is protected.</p>
+                </div>
+                <div class="client">
+                    <h3><i class="fa-regular fa-clock" style="color: blue;font-size: 30px;"></i> Customer service 24/7</h3>
+                    <hr>
+                    <p>Our dedicated customer service team is available around the clock, 24/7, to assist you with any inquiries or issues you may have, ensuring you have a seamless experience at any time.</p>
+                </div>
+            </div>
+    </div>
+    <footer>
+            <div class="informations">
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><h2>Our Locations</h2>
+                    <div class="moreinformations">
+                    <span>Agadir Agency</span><br>
+                    <span>Casablanca Agency</span><br>
+                    <span>Rabat Agency</span><br>
+                    <span>Tangier Agency</span><br>
+                    <span>Marackech Agency</span>
+                    </div>
+                    </li>
+                    <div class="lines"></div>
+                    <li><i class="fa-solid fa-phone"></i><h2>Contact Phone</h2>
+                    <div class="moreinformations">
+                        <span>Info & Reservation:</span><br>
+                        <span><h4 style="display: inline-block;">+212 629988434</h4></span>
+                    </div>
+                    </li>
+                    <div class="lines"></div>
+                    <li><i class="fa-solid fa-envelope"></i><h2> Email Contact</h2>
+                    <div class="moreinformations">
+                        <span>Booking: <h4 style="display: inline-block;">booking@AnasCars.ma</h4></span><br>
+                        <span>Contact: <h4 style="display: inline-block;">contact@carlaville.ma</h4></span>
+                    </div>
+                    </li>
+                    <div class="lines"></div>
+                    <li><i class="fa-solid fa-clock"></i><h2 style="display: inline-block;"> Working Hours</h2>
+                    <div class="moreinformations">
+                        <span>Working Hours: <h4 style="display: inline-block;">24h/7j</h4></span><br>
+                        <span>Reservation: <h4 style="display: inline-block;">All Year</h4></span>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="line"></div>
+            <div class="infor2">
+                <div class="informations2">
+                    <a href="home.html" class="logo"><img src="logo.webp" alt=""></a><br>
+                    <p>Car La Ville offers premium car rental in Morocco with high-end vehicles for unforgettable trips.</p>
+                </div>
+                <div class="information3">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="C:\Users\ANAS\Desktop\PFF\Partie Pratique\OurCars\OurCars.html">Our Cars</a></li>
+                        <li><a href="C:\Users\ANAS\Desktop\PFF\Partie Pratique\AboutUs\AboutUs.html">About Us</a></li>
+                        <li><a href="C:\Users\ANAS\Desktop\PFF\Partie Pratique\ContactUs\Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="line"></div>
+            <div class="informations4">
+                <p>Follow us:</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                
+                <div class="debitcard">
+                    <img src="visa.png" alt="">
+                    <img src="card.png" alt="">
+                    <img src="maestro.png" alt="">
+                </div>
+            </div>
+            <div class="informations5">
+                <p>© Copyright 2025 carlaville.ma</p>
+                <div class="seceruty">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms and Conditions</a>
+                </div>
+            </div>
+    </footer>
+
+
+
+    <script src="home.js"></script>
+</body>
+</html>

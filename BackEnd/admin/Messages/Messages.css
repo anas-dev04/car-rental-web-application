@@ -1,0 +1,79 @@
+body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* الشريط الجانبي */
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background: #2c3e50;
+            color: white;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+            border-bottom: 1px solid #34495e;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar ul li:hover {
+            background: #34495e;
+        }
+
+        .logout {
+            text-align: center;
+            padding: 15px;
+            background: red;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin: 0;
+        }
+
+        .logout:hover {
+            background: #c0392b;
+        }
+/* المحتوى الرئيسي */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.content div{
+    background-color: red;
+}
